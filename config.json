@@ -13,11 +13,11 @@
   "verbose": true,
   "WIDTH": 7000,
   "HEIGHT": 7000,
-  "MODE": "tdm",
+  "MODE": "ffa",
   "RANDOM_COLORS": false,
   "BANNED_CHARACTER_REGEX": "/[\uFDFD\u200E\u0000]/gi", 
   "ROOM_SETUP": [
-    [ "bas1","rock", "norm", "norm", "rock" , "norm", "norm","rock", "bas4"],
+    [ "norm","rock", "norm", "norm", "rock" , "norm", "norm","rock", "norm"],
     [ "rock","norm", "norm", "norm", "norm" , "norm", "norm","norm", "rock"],
     [ "norm","norm", "norm", "norm", "dom1" , "norm", "norm","norm", "norm"],
     [ "norm","norm", "norm", "nest", "nest" , "nest", "norm","norm", "norm"],
@@ -25,7 +25,7 @@
     [ "norm","norm", "norm", "nest", "nest" , "nest", "norm","norm", "norm"],
     [ "norm","norm", "norm", "norm", "dom1" , "norm", "norm","norm", "norm"],
     [ "rock", "norm","norm", "norm", "norm",  "norm", "norm","norm", "rock"],
-    [ "bas3", "rock", "norm", "norm","rock", "norm", "norm", "rock", "bas2"]
+    [ "norm", "rock", "norm", "norm","rock", "norm", "norm", "rock", "norm"]
   ],
   "X_GRID": 9,
   "Y_GRID": 9,
