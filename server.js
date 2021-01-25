@@ -4957,7 +4957,7 @@ prepareToSpawn: (classArray, number, nameClass, typeOfLocation = 'norm') => {
                     sockets.broadcast('I smell green paint...');
                         break;
 				case 13: 
-                        choice = [[Class.ps2_22], 1, 'a', 'dom1']; 
+                        choice = [[Class.s2_22], 1, 'a', 'dom1']; 
                     sockets.broadcast('Now I smell blue paint now!');
                         break;
                     case 14: 
@@ -5040,7 +5040,8 @@ prepareToSpawn: (classArray, number, nameClass, typeOfLocation = 'norm') => {
             spawnBosses(census);
             // Bots
                     if (bots.length < c.TASTERAINBOW) {
-                    let o = new Entity(room.random());
+			     let o = new Entity(room.random());
+                    o.color = 15;
                     o.define(Class.rambot);
                      let arrayOfClasses = [Class.ttr1, Class.ttr2, Class.ttr3,Class.twin, Class.sniper, Class.pound, 
                                            Class.machine, Class.flank, Class.director, Class.lancer, Class.pelter, Class.borer, 
@@ -5054,12 +5055,9 @@ prepareToSpawn: (classArray, number, nameClass, typeOfLocation = 'norm') => {
                     o.define(newClass);
                     o.name += ran.chooseBotName();
                     o.refreshBodyAttributes();
-                          o.team = ran.choose([-1, -2, -3, -4]);
-                          if (o.team == -1) o.color = 10;
-                          if (o.team == -2) o.color = 11;
-                          if (o.team == -3) o.color = 12;
-                          if (o.team == -4) o.color = 15; 
-                  bots.push(o);//hey it works
+                    o.color = 15;
+                    bots.push(o);
+                }
                 }
                 // Remove dead ones
                 bots = bots.filter(e => { return !e.isDead(); });
