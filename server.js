@@ -5069,7 +5069,7 @@ prepareToSpawn: (classArray, number, nameClass, typeOfLocation = 'norm') => {
                     }
                 });
             
-        };
+        }
     })();
          /* if (bots.length < c.BOTS) {
         let tank = [];
