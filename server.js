@@ -31,7 +31,7 @@ Array.prototype.remove = index => {
         this[index] = this.pop();
         return r;
     }
-};
+}; 
 var keys = [
     // Focus Group
     'token', // Mine
