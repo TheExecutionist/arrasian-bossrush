@@ -5055,9 +5055,8 @@ prepareToSpawn: (classArray, number, nameClass, typeOfLocation = 'norm') => {
                     o.define(newClass);
                     o.name += ran.chooseBotName();
                     o.refreshBodyAttributes();
-                    o.color = 15;
+                    o.color = 12;
                     bots.push(o);
-                }
                 }
                 // Remove dead ones
                 bots = bots.filter(e => { return !e.isDead(); });
@@ -5069,7 +5068,7 @@ prepareToSpawn: (classArray, number, nameClass, typeOfLocation = 'norm') => {
                     }
                 });
             
-        }
+        };
     })();
          /* if (bots.length < c.BOTS) {
         let tank = [];
